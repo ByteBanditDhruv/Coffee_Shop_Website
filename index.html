@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brewlicious Coffee Shop</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <script src="https://kit.fontawesome.com/5e87d89528.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand d-flex justify-content-between w-100 align-items-center" href="#">
+                    <img src="assets/logo_new_transparent.png" alt="Logo" class="logo-img">
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </a>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto text-center">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about-us">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#our-menu">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#our-blog">Blogs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="assets/contact.html">Contact</a></li>
+                    </ul>
+
+                    <ul class="cta d-none d-lg-flex align-items-center list-unstyled mb-0">
+                        <a href="javascript:void(0);" class="btn icon-btn" onclick="openSearch()">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <li><a href="#" class="btn icon-btn"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li><a href="assets/login.html" class="btn login-btn">LOG IN / SIGN UP</a></li>
+                    </ul>
+
+                    <div class="cta-mobile d-lg-none d-flex flex-column align-items-center gap-2 mt-3">
+                        <div class="d-flex gap-2">
+                            <a href="javascript:void(0);" class="btn icon-btn" onclick="openSearch()">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href="#" class="btn icon-btn"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                        <a href="#" class="btn login-btn">LOG IN / SIGN UP</a>
+                    </div>
+
+                    <div id="searchOverlay" class="search-overlay">
+                        <span class="close-btn" onclick="closeSearch()">&times;</span>
+                        <div class="search-box">
+                            <input type="text" placeholder="Search for coffee, brews, or blogs..." />
+                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO-SECTION -->
+
+    <section class="hero-section">
+        <div class="container position-relative z-1">
+            <div class="dusty-bg"></div>
+            <div class="hero-content">
+                <h1 class="display-4 fw-bold mb-4">Brewed to Perfection, Served with Love</h1>
+                <p class="lead mb-3">Start your day or wind it down with a comforting cup of our signature coffee blends
+                    — crafted fresh, served warm.</p>
+                <a href="#" class="btn btn-lg btn-dark custom-btn">Discover Our Brews</a>
+                <a href="#" class="btn btn-lg custom-btn-2">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT-US -->
+
+    <section class="about-us" id="about-us">
+        <div class="container">
+            <div class="left-wrapper">
+                <img src="assets/about-main.jpg" alt="Restaurant Interior" class="main-image" />
+
+                <div class="badge-box">
+                    <i class="fa-solid fa-award"></i>
+                    <p><strong>25 Years Of<br>Experience</strong></p>
+                </div>
+
+                <img src="assets/barista.png" alt="Chef" class="chef-image" />
+            </div>
+            <div class="right-wrapper">
+                <h4>About Us</h4>
+                <h1>Where Every Cup Tells a Story</h1>
+                <p>Brewlicious isn’t just a café—it’s a canvas of flavors, crafted with care and brewed with stories. We
+                    started with a simple idea: bring people together over coffee that’s bold, soulful, and
+                    unforgettable.</p>
+                <p>From bean to brew, everything we do celebrates the art of slow living—one warm cup at a time.
+                    Whether you’re chasing deadlines or daydreams, there’s always a seat for you here.</p>
+
+                <ul>
+                    <li>
+                        <h3>🌱 Locally Roasted Beans</h3>
+                    </li>
+                    <li>
+                        <h3>🧑‍🍳 Signature House Specials</h3>
+                    </li>
+                    <li>
+                        <h3>🌿 Sustainable & Soulful</h3>
+                    </li>
+                </ul>
+                <div class="button-group">
+                    <a href="#" class="btn btn-lg btn-dark custom-btn">Order Now</a>
+                    <a href="#" class="btn btn-lg custom-btn-2">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
+        <div class="container">
+            <div class="row">
+                <div class="stats-wrapper">
+                    <div class="col-lg-3 stats">
+                        <i class="fa-solid fa-award fa-2x mb-2"></i>
+                        <div class="counting" data-count="25">0</div>
+                        <h5>Years of Experience</h5>
+                    </div>
+
+                    <div class="col-lg-3 stats">
+                        <i class="fa-solid fa-mug-hot fa-2x mb-2" style="margin-left: 10px;"></i>
+                        <div class="counting" data-count="500">0</div>
+                        <h5>Cups Brewed Daily</h5>
+                    </div>
+
+                    <div class="col-lg-3 stats">
+                        <i class="fa-solid fa-users fa-2x mb-2"></i>
+                        <div class="counting" data-count="10000">0</div>
+                        <h5>Happy Customers</h5>
+                    </div>
+
+                    <div class="col-lg-3 stats">
+                        <i class="fa-solid fa-star fa-2x mb-2"></i>
+                        <div class="counting" data-count="4.5">0</div>
+                        <h5>Average Ratings</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR-MENU -->
+    <section class="our-menu" id="our-menu">
+        <div class="container py-5">
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6">
+                    <h2><span class="featured-title">Featured</span> <span class="featured-subtitle">Products</span>
+                    </h2>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-muted">
+                        From classic favorites to signature specials — taste the Brewlicious difference.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="product-card text-center position-relative" onclick="openPopup('americano')">
+                        <h5 class="product-title">Americano Coffee</h5>
+                        <p class="product-des">Smooth and bold coffee with a clean, rich taste.</p>
+                        <img src="assets/americano-coffee.jpg" class="product-img" alt="Caffe Americano">
+                        <p class="product-price">$18.00</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="product-card text-center position-relative" onclick="openPopup('caffeLatte')">
+                        <h5 class="product-title">Caffè latte</h5>
+                        <p class="product-des">Creamy and light, made with fresh milk and rich coffee.</p>
+                        <img src="assets/latte-coffee.jpg" class="product-img" alt="Caffè latte">
+                        <p class="product-price">$12.00</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="product-card text-center position-relative" onclick="openPopup('cappuccino')">
+                        <h5 class="product-title">Cappuccino</h5>
+                        <p class="product-des">Espresso topped with frothy milk for a bold, creamy taste.</p>
+                        <img src="assets/cappuccino.jpg" class="product-img" alt="Cappuccino">
+                        <p class="product-price">$12.00</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="product-card text-center position-relative" onclick="openPopup('flatWhite')">
+                        <h5 class="product-title">Flat White</h5>
+                        <p class="product-des">Smooth espresso with steamed milk and velvety texture.</p>
+                        <img src="assets/flat-white.png" class="product-img" alt="Flat white">
+                        <p class="product-price">$12.00</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="product-card text-center position-relative" onclick="openPopup('caffeMocha')">
+                        <h5 class="product-title">Caffè Mocha</h5>
+                        <p class="product-des">Espresso with chocolate and milk; sweet and rich.</p>
+                        <img src="assets/mocha.jpg" class="product-img" alt="Caffe Mocha">
+                        <p class="product-price">$12.00</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="product-card text-center position-relative" onclick="openPopup('coldBrew')">
+                        <h5 class="product-title">Cold Brew</h5>
+                        <p class="product-des">Slow-steeped coffee, served cold for a bold, smooth taste.</p>
+                        <img src="assets/cold-brew.jpg" class="product-img" alt="White Chocolate">
+                        <p class="product-price">$17.00</p>
+                    </div>
+                </div>
+                <div id="coffeePopup" class="popup-overlay">
+                    <div class="popup-content">
+                        <span class="close-btn" onclick="closePopup()">&times;</span>
+                        <img id="popupImg" src="" alt="Coffee Image" class="popup-img">
+                        <h2 id="popupTitle">Coffee Name</h2>
+                        <p id="popupDescription">Coffee description...</p>
+                        <p id="popupPrice">Price: $0.00</p>
+                        <button class="add-btn" onclick="activateQuantity()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row justify-content-center my-5">
+                    <div class="col-auto">
+                        <a href="#menu" class="btn custom-btn">View All Products</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR-BLOGS -->
+
+    <section class="py-5 bg-light our-blog" id="our-blog">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">Our Blogs</h2>
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="position-relative">
+                            <img src="assets/blog-1.png" class="card-img-top rounded-top" alt="Delicious Coffee">
+                            <div class="position-absolute top-0 start-0 bg-white text-center p-2 m-2 shadow-sm rounded">
+                                <div class="fw-bold fs-5">16</div>
+                                <div class="text-uppercase small">Dec</div>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="text-muted small mb-1">NEWS</p>
+                            <h5 class="card-title">Brewlicious Grinds it Fresh – From Bean to Cup</h5>
+                            <hr class="w-25 mx-auto mb-3">
+                            <p class="card-text small text-muted">
+                                At Brewlicious, every cup starts with freshly ground beans sourced from the lush estates
+                                of Chikmagalur. Our premium grinders ensure you taste the richness of Indian-grown
+                                coffee in every sip...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="position-relative">
+                            <img src="assets/blog2.png" class="card-img-top rounded-top" alt="Coffee Tours">
+                            <div class="position-absolute top-0 start-0 bg-white text-center p-2 m-2 shadow-sm rounded">
+                                <div class="fw-bold fs-5">16</div>
+                                <div class="text-uppercase small">Dec</div>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="text-muted small mb-1">NEWS</p>
+                            <h5 class="card-title">Waking Up with Brewlicious – A Morning Ritual Reinvented</h5>
+                            <hr class="w-25 mx-auto mb-3">
+                            <p class="card-text small text-muted">
+                                For thousands of Indians, mornings begin with coffee. At Brewlicious, we elevate that
+                                tradition with curated morning brews and slow-pour techniques that honor both ritual and
+                                flavor. Start your day the mindful way...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="position-relative">
+                            <img src="assets/blog3.png" class="card-img-top rounded-top" alt="Helbach Coffee">
+                            <div class="position-absolute top-0 start-0 bg-white text-center p-2 m-2 shadow-sm rounded">
+                                <div class="fw-bold fs-5">16</div>
+                                <div class="text-uppercase small">Dec</div>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="text-muted small mb-1">NEWS</p>
+                            <h5 class="card-title">Mornings at Brewlicious – Coffee, Croissants & Culture</h5>
+                            <hr class="w-25 mx-auto mb-3">
+                            <p class="card-text small text-muted">
+                                From buttery croissants to creamy cappuccinos, our mornings at Brewlicious are crafted
+                                to perfection. Experience a European café feel with an Indian soul — right in your
+                                neighborhood...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+
+    <section class="py-5 bg-cream reviews">
+        <div class="container">
+            <h2 class="text-center section-title mb-5">What Our Customers Say</h2>
+            <div class="owl-carousel owl-theme">
+
+                <div class="item">
+                    <div class="card p-4 shadow-sm border-0 rounded-3 text-center">
+                        <img src="assets/review1.jpg" alt="rahul" class="profile-img mx-auto mb-3">
+                        <div class="text-warning mb-2">★★★★★</div>
+                        <p class="text-muted fst-italic">
+                            “The latte at Brewlicious is pure bliss! Velvety smooth milk, rich espresso, and the perfect
+                            balance of flavor. It's my everyday comfort drink.”
+                        </p>
+                        <h6 class="mt-3 mb-0 text-espresso">— Rahul Sharma, Mumbai</h6>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card p-4 shadow-sm border-0 rounded-3 text-center">
+                        <img src="assets/user2.jpg" alt="Rohan" class="profile-img mx-auto mb-3">
+                        <div class="text-warning mb-2">★★★★☆</div>
+                        <p class="text-muted fst-italic">
+                            “Love the pour-over sessions! Brewlicious is teaching India to appreciate coffee the
+                            artisanal way.”
+                        </p>
+                        <h6 class="mt-3 mb-0 text-espresso">— Rohan Mehta, Pune</h6>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card p-4 shadow-sm border-0 rounded-3 text-center">
+                        <img src="assets/user3.jpg" alt="Priya" class="profile-img mx-auto mb-3">
+                        <div class="text-warning mb-2">★★★★★</div>
+                        <p class="text-muted fst-italic">
+                            “Perfect mix of cozy café vibes and world-class coffee. I can't start my workday without
+                            their flat white.”
+                        </p>
+                        <h6 class="mt-3 mb-0 text-espresso">— Priya Nair, Mumbai</h6>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card p-4 shadow-sm border-0 rounded-3 text-center">
+                        <img src="assets/user4.jpg" alt="Akshay" class="profile-img mx-auto mb-3">
+                        <div class="text-warning mb-2">★★★★☆</div>
+                        <p class="text-muted fst-italic">
+                            “I switched from tea to Brewlicious espresso. Never going back!”
+                        </p>
+                        <h6 class="mt-3 mb-0 text-espresso">— Akshay Patel, Ahmedabad</h6>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MOMENTS -->
+
+    <section class="moments d-flex align-items-center justify-content-center">
+        <div class="container py-5">
+            <h2 class="text-center mb-5">Coffee Moments</h2>
+            <div class="row justify-content-center g-4">
+
+                <!-- Gallery Item -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="gallery-item position-relative">
+                        <img src="assets/img1.jpg" alt="Pour over coffee"
+                            class="coffee-img img-fluid rounded shadow-sm">
+                        <div class="overlay">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="gallery-item position-relative">
+                        <img src="assets/img2.jpg" alt="Heart beans" class="coffee-img img-fluid rounded shadow-sm">
+                        <div class="overlay">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="gallery-item position-relative">
+                        <img src="assets/img3.jpg" alt="Espresso process"
+                            class="coffee-img img-fluid rounded shadow-sm">
+                        <div class="overlay">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="gallery-item position-relative">
+                        <img src="assets/img4.jpg" alt="Coffee pour" class="coffee-img img-fluid rounded shadow-sm">
+                        <div class="overlay">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="gallery-item position-relative">
+                        <img src="assets/img5.jpg" alt="Cold coffee" class="coffee-img img-fluid rounded shadow-sm">
+                        <div class="overlay">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="gallery-item position-relative">
+                        <img src="assets/img6.jpg" alt="Chemex brewing" class="coffee-img img-fluid rounded shadow-sm">
+                        <div class="overlay">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer class="footer bg-cream text-dark pt-5 pb-4">
+        <div class="container">
+            <div class="row gy-5">
+
+                <!-- Logo & Description -->
+                <div class="col-md-4 text-center text-md-start">
+                    <img src="assets/logo_transparent.png" alt="Brewlicious Logo" class="footer-logo mb-3">
+                    <p>
+                        Brewlicious Coffee Shop is where aromas meet memories. Step in for artisan brews, warm ambiance,
+                        and a sip of happiness.
+                    </p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-dark me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-dark me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-2 text-center text-md-start">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#menu" class="text-decoration-none text-dark">Menu</a></li>
+                        <li><a href="#about" class="text-decoration-none text-dark">About Us</a></li>
+                        <li><a href="#gallery" class="text-decoration-none text-dark">Gallery</a></li>
+                        <li><a href="#contact" class="text-decoration-none text-dark">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-3 text-center text-md-start">
+                    <h5 class="mb-3">Contact Us</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> 123 Coffee Street, India</p>
+                    <p><i class="fas fa-phone me-2"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-envelope me-2"></i> hello@brewlicious.in</p>
+                </div>
+
+                <!-- Map & Newsletter -->
+                <div class="col-md-3 text-center text-md-start">
+                    <h5 class="mb-3">Locate Us</h5>
+                    <div class="map-container mb-3">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609926352!2d72.7410980712799!3d19.082197839277464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63d75f126c1%3A0xa9e95ab9aefb2463!2sCoffee%20Shop!5e0!3m2!1sen!2sin!4v1719471472650!5m2!1sen!2sin"
+                            width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email" required>
+                            <button class="btn btn-dark" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <hr class="my-4">
+
+            <div class="text-center small">
+                © 2025 <strong>Brewlicious Coffee Shop</strong>. All rights reserved | Crafted with ☕ in India.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
